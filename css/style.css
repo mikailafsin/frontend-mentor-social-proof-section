@@ -55,6 +55,7 @@ img {
 .social-proof-bg-pattern-top-mobile,
 .social-proof-bg-pattern-bottom-mobile {
     position: absolute;
+    z-index: -1;
 }
 
 .social-proof-bg-pattern-top-mobile {
@@ -150,6 +151,7 @@ img {
     .social-proof-bg-pattern-bottom-desktop {
         display: block;
         position: absolute;
+        z-index: -1;
     }
 
     .social-proof-bg-pattern-top-desktop {

@@ -81,6 +81,7 @@ Actually, in this challenge, as in the previous challenge, I reinforced the use 
 .social-proof-bg-pattern-bottom-desktop {
         display: block;
         position: absolute;
+        z-index: -1;
     }
 ```
 

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.social-proof {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.social-proof-bg-pattern-top-desktop,
+.social-proof-bg-pattern-bottom-desktop {
+    display: none;
+}
+
+.social-proof-bg-pattern-top-mobile,
+.social-proof-bg-pattern-bottom-mobile {
+    position: absolute;
+}
+
+.social-proof-bg-pattern-top-mobile {
+    top: 0;
+    left: 0;
+}
+
+.social-proof-bg-pattern-bottom-mobile {
+    bottom: 0;
+    right: 0;
+}
+
+.social-proof-texts {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.social-proof-texts-h1 {
+    color: var(--very-dark-magenta);
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    font-size: 2.25rem;
+}
+
+.social-proof-texts-p {
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    line-height: 1.375rem;
+}
+
+.social-proof-ratings {
+    margin-bottom: 3rem;
+}
+
+.social-proof-rating {
+    border-radius: .5rem;
+    padding: 1rem 0;
+    background-color: var(--light-grayish-magenta);
+    overflow: hidden;
+    text-align: center;
+}
+
+.social-proof-rating:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.social-proof-rating-stars {
+    margin-bottom: .5rem;
+}
+
+.social-proof-rating-p {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+.social-proof-box {
+    border-radius: .5rem;
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-proof-buyer-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-proof-buyer-info img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.social-proof-buyer-name {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.social-proof-verified-status {
+    color: var(--soft-pink);
+}
+
+.social-proof-buyer-comment {
+    color: var(--white);
+    line-height: 1.375rem;
+}
+
+@media only screen and (min-width:1400px) {
+
+    .social-proof-bg-pattern-top-desktop,
+    .social-proof-bg-pattern-bottom-desktop {
+        display: block;
+        position: absolute;
+    }
+
+    .social-proof-bg-pattern-top-desktop {
+        top: 0;
+        left: 0;
+    }
+
+    .social-proof-bg-pattern-bottom-desktop {
+        bottom: 0;
+        right: 0;
+    }
+
+    .social-proof-bg-pattern-top-mobile,
+    .social-proof-bg-pattern-bottom-mobile {
+        display: none;
+    }
+
+    .social-proof-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .social-proof-texts {
+        width: calc(40% - 5rem);
+    }
+
+    .social-proof-ratings {
+        width: calc(60% - 5rem);
+        margin-bottom: initial;
+    }
+
+    .social-proof-texts {
+        text-align: initial;
+        margin-bottom: initial;
+    }
+
+    .social-proof-texts-h1 {
+        width: initial;
+        margin: 0 0 2rem 0;
+        font-size: 4rem;
+    }
+
+    .social-proof-texts-p {
+        font-size: 1.25rem;
+    }
+
+    .social-proof-rating {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        margin-left: auto;
+        padding: 1.5rem 4rem;
+    }
+
+    .social-proof-rating-p {
+        font-size: 1.125rem;
+    }
+
+    .social-proof-rating:first-child {
+        margin-right: 10rem;
+    }
+
+    .social-proof-rating:nth-child(2) {
+        margin-right: 5rem;
+    }
+
+    .social-proof-boxes {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .social-proof-box {
+        margin-bottom: initial;
+    }
+
+    .social-proof-box:nth-child(2) {
+        margin-top: 2rem;
+    }
+
+    .social-proof-box:last-child {
+        margin-top: 4rem;
+    }
+
+    .social-proof {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: initial;
+    }
+
+    .social-proof-buyer-comment {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+
+    .social-proof-buyer-info img {
+        width: 50px;
+    }
+
+    .social-proof-buyer-name-and-verified-status {
+        font-size: 1.125rem;
+    }
+
+    .social-proof-rating-stars {
+        margin-bottom: initial;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 80%;
+    }
+}
